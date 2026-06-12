@@ -1,0 +1,173 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta
+      name="description"
+      content="Minimal robotics portfolio with selected robot skill demonstrations."
+    >
+    <title>Moritz Schwerer</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <main id="top">
+      <section class="intro" aria-labelledby="intro-title">
+        <div class="intro-copy">
+          <h1 id="intro-title">Moritz Schwerer</h1>
+          <p class="intro-text">
+            This page collects short demonstrations of selected projects. The
+            goal is to advance general physical intelligence and build systems
+            that can reliably plan and execute in the real world. The first
+            project is a robust locomotion controller that can be adapted across
+            different robots and behaviors. The second goes a step further,
+            learning the more abstract planning capability needed to search for
+            the ball, approach it, kick, and continue playing, all within a
+            single unified onboard policy.
+          </p>
+        </div>
+        <div class="intro-meta" aria-label="Profile links">
+          <a href="https://github.com/MoritzSchwerer" target="_blank" rel="noreferrer">GitHub</a>
+          <a href="https://www.linkedin.com/in/moritz-schwerer-b5260726b" target="_blank" rel="noreferrer">LinkedIn</a>
+          <a href="mailto:m.u.schwerer@gmail.com">Email</a>
+        </div>
+      </section>
+
+      <section class="section work" id="work" aria-label="Selected robot projects">
+        <div class="project-list">
+          <article class="project">
+            <header class="project-header">
+              <div>
+                <p class="project-kicker">Project 01</p>
+                <h2>Fast agile locomotion on the Unitree G1</h2>
+              </div>
+              <p>
+                Simulation-trained locomotion controller deployed on multiple
+                humanoid robots for fast movement, acceleration, terrain
+                variation, and robustness to carried payloads.
+              </p>
+            </header>
+            <div class="video-feature">
+              <div class="video-frame">
+                <iframe
+                  src="https://www.youtube.com/embed/CUjY5cHOTr0?autoplay=1&mute=1&rel=0&playsinline=1"
+                  title="Unitree G1 regular sprint"
+                  loading="eager"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                  allowfullscreen>
+                </iframe>
+              </div>
+              <p>Regular sprint on hardware.</p>
+            </div>
+            <div class="video-grid">
+              <figure class="video-item">
+                <div class="video-frame">
+                  <button class="video-trigger" type="button" data-video-id="Vv0oTbj9hJA" data-title="Unitree G1 standing acceleration">
+                    <img src="https://i.ytimg.com/vi/Vv0oTbj9hJA/hqdefault.jpg" alt="Unitree G1 standing acceleration">
+                    <span>Play</span>
+                  </button>
+                </div>
+                <figcaption>Standing acceleration.</figcaption>
+              </figure>
+              <figure class="video-item">
+                <div class="video-frame">
+                  <button class="video-trigger" type="button" data-video-id="dwCttvhq0AI" data-title="Unitree G1 locomotion on different terrains">
+                    <img src="https://i.ytimg.com/vi/dwCttvhq0AI/hqdefault.jpg" alt="Unitree G1 locomotion on different terrains">
+                    <span>Play</span>
+                  </button>
+                </div>
+                <figcaption>Different terrain conditions.</figcaption>
+              </figure>
+              <figure class="video-item">
+                <div class="video-frame">
+                  <button class="video-trigger" type="button" data-video-id="6PvrsiKHXDM" data-title="Unitree G1 locomotion with random weights in hand">
+                    <img src="https://i.ytimg.com/vi/6PvrsiKHXDM/hqdefault.jpg" alt="Unitree G1 locomotion with random weights in hand">
+                    <span>Play</span>
+                  </button>
+                </div>
+                <figcaption>Random carried weights across different robots.</figcaption>
+              </figure>
+            </div>
+            <dl>
+              <div>
+                <dt>Robots</dt>
+                <dd>Unitree G1 and Booster T1</dd>
+              </div>
+              <div>
+                <dt>Contribution</dt>
+                <dd>
+                  Simulation training, hardware transfer, and evaluation across
+                  speed, terrain, and payload changes.
+                </dd>
+              </div>
+            </dl>
+          </article>
+
+          <article class="project">
+            <header class="project-header">
+              <div>
+                <p class="project-kicker">Project 02</p>
+                <h2>Autonomous ball kicking on the Booster T1</h2>
+              </div>
+              <p>
+                End-to-end reinforcement learning controller for autonomous
+                goal scoring in a RoboCup-style setting, trained in simulation
+                and deployed with onboard perception.
+              </p>
+            </header>
+            <div class="video-feature">
+              <div class="video-frame">
+                <button class="video-trigger" type="button" data-video-id="lKFfoH0x3Oo" data-title="Booster T1 continuous autonomous ball kicking">
+                  <img src="https://i.ytimg.com/vi/lKFfoH0x3Oo/hqdefault.jpg" alt="Booster T1 continuous autonomous ball kicking">
+                  <span>Play</span>
+                </button>
+              </div>
+              <p>Continuous autonomous play: approach, align, kick, reset, repeat.</p>
+            </div>
+            <div class="video-feature">
+              <div class="video-frame">
+                <button class="video-trigger" type="button" data-video-id="fVxG8vxfnOA" data-title="Booster T1 controlled-position ball kicking grid">
+                  <img src="https://i.ytimg.com/vi/fVxG8vxfnOA/hqdefault.jpg" alt="Booster T1 controlled-position ball kicking grid">
+                  <span>Play</span>
+                </button>
+              </div>
+              <p>
+                Controlled initial positions: close and far starts from left,
+                middle, and right.
+              </p>
+            </div>
+            <dl>
+              <div>
+                <dt>Robot</dt>
+                <dd>Booster T1</dd>
+              </div>
+              <div>
+                <dt>Sensing</dt>
+                <dd>Head-mounted RealSense camera</dd>
+              </div>
+              <div>
+                <dt>Compute</dt>
+                <dd>Onboard processing only</dd>
+              </div>
+              <div>
+                <dt>Result</dt>
+                <dd>26/30 goals from controlled initial positions</dd>
+              </div>
+            </dl>
+          </article>
+        </div>
+      </section>
+
+    </main>
+
+    <footer class="footer">
+      <p>Moritz Schwerer</p>
+      <div>
+        <a href="mailto:m.u.schwerer@gmail.com">Email</a>
+        <a href="https://github.com/MoritzSchwerer" target="_blank" rel="noreferrer">GitHub</a>
+        <a href="https://www.linkedin.com/in/moritz-schwerer-b5260726b" target="_blank" rel="noreferrer">LinkedIn</a>
+      </div>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
