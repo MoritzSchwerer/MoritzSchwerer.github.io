@@ -16,17 +16,14 @@
         <div class="intro-copy">
           <h1 id="intro-title">Moritz Schwerer</h1>
           <p class="intro-text">
-            This page collects short demonstrations of selected projects. The
-            goal is to advance general physical intelligence and build systems
-            that can reliably plan and execute in the real world. The first
-            project is a robust locomotion controller that can be adapted across
-            different robots and behaviors. The second goes a step further,
-            learning the more abstract planning capability needed to search for
-            the ball, approach it, kick, and continue playing, all within a
-            single unified onboard policy.
+            Humanoid RL engineer building simulation-trained policies that
+            transfer to real hardware. My work spans whole-body teleoperation,
+            robust locomotion across different robots, and autonomous football
+            behavior with onboard perception.
           </p>
         </div>
         <div class="intro-meta" aria-label="Profile links">
+          <a href="assets/moritz-schwerer-resume.pdf" target="_blank" rel="noreferrer">Resume</a>
           <a href="https://github.com/MoritzSchwerer" target="_blank" rel="noreferrer">GitHub</a>
           <a href="https://www.linkedin.com/in/moritz-schwerer-b5260726b" target="_blank" rel="noreferrer">LinkedIn</a>
           <a href="mailto:m.u.schwerer@gmail.com">Email</a>
@@ -35,10 +32,69 @@
 
       <section class="section work" id="work" aria-label="Selected robot projects">
         <div class="project-list">
-          <article class="project">
+          <article class="project" id="teleoperation">
             <header class="project-header">
               <div>
                 <p class="project-kicker">Project 01</p>
+                <h2>Whole-body motion tracking for humanoid teleoperation</h2>
+              </div>
+              <p>
+                One reinforcement learning policy trained for teleoperation
+                tracks different prerecorded whole-body references on real
+                hardware.
+              </p>
+            </header>
+            <div class="portrait-feature">
+              <div class="portrait-video-pair">
+                <figure class="video-item">
+                  <div class="video-frame video-frame--portrait">
+                    <button class="video-trigger" type="button" data-video-id="k5HzeAgeQUQ" data-title="RL teleoperation policy replaying a prerecorded motion trajectory">
+                      <img src="https://i.ytimg.com/vi/k5HzeAgeQUQ/hqdefault.jpg" alt="Robot replaying a prerecorded motion trajectory with an RL teleoperation policy">
+                      <span>Play</span>
+                    </button>
+                  </div>
+                  <figcaption>Reference trajectory playback on hardware.</figcaption>
+                </figure>
+                <figure class="video-item">
+                  <div class="video-frame video-frame--portrait">
+                    <button class="video-trigger" type="button" data-video-id="SYN35Rq9KY8" data-title="Same RL teleoperation policy tracking a dance reference">
+                      <img src="https://i.ytimg.com/vi/SYN35Rq9KY8/hqdefault.jpg" alt="Humanoid robot dancing while tracking a second reference with the same RL policy">
+                      <span>Play</span>
+                    </button>
+                  </div>
+                  <figcaption>Same policy, different reference: a 16-second dance sequence on hardware.</figcaption>
+                </figure>
+              </div>
+              <div class="portrait-feature-copy">
+                <p class="project-kicker">Multiple references</p>
+                <h3>One policy, different whole-body motions</h3>
+                <p>
+                  The same trained policy executes both trajectories,
+                  translating distinct references into stable whole-body
+                  movement on hardware.
+                </p>
+              </div>
+            </div>
+            <dl>
+              <div>
+                <dt>Method</dt>
+                <dd>Reinforcement learning</dd>
+              </div>
+              <div>
+                <dt>Input</dt>
+                <dd>Prerecorded motion trajectories</dd>
+              </div>
+              <div>
+                <dt>Task</dt>
+                <dd>Whole-body motion tracking</dd>
+              </div>
+            </dl>
+          </article>
+
+          <article class="project">
+            <header class="project-header">
+              <div>
+                <p class="project-kicker">Project 02</p>
                 <h2>Fast agile locomotion across humanoid robots</h2>
               </div>
               <p>
@@ -50,7 +106,7 @@
             <div class="video-feature">
               <div class="video-frame">
                 <iframe
-                  src="https://www.youtube.com/embed/CUjY5cHOTr0?autoplay=1&mute=1&rel=0&playsinline=1"
+                  src="https://www.youtube.com/embed/CUjY5cHOTr0?autoplay=1&amp;mute=1&amp;rel=0&amp;playsinline=1"
                   title="Unitree G1 regular sprint"
                   loading="eager"
                   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
@@ -111,7 +167,7 @@
           <article class="project">
             <header class="project-header">
               <div>
-                <p class="project-kicker">Project 02</p>
+                <p class="project-kicker">Project 03</p>
                 <h2>Autonomous ball kicking on the Booster T1</h2>
               </div>
               <p>
@@ -120,15 +176,6 @@
                 and deployed with onboard perception.
               </p>
             </header>
-            <div class="video-feature">
-              <div class="video-frame">
-                <button class="video-trigger" type="button" data-video-id="lKFfoH0x3Oo" data-title="Booster T1 continuous autonomous ball kicking">
-                  <img src="https://i.ytimg.com/vi/lKFfoH0x3Oo/hqdefault.jpg" alt="Booster T1 continuous autonomous ball kicking">
-                  <span>Play</span>
-                </button>
-              </div>
-              <p>Continuous autonomous play: approach, align, kick, reset, repeat.</p>
-            </div>
             <div class="video-feature">
               <div class="video-frame">
                 <button class="video-trigger" type="button" data-video-id="fVxG8vxfnOA" data-title="Booster T1 controlled-position ball kicking grid">
@@ -164,6 +211,7 @@
               </div>
             </dl>
           </article>
+
         </div>
       </section>
 
@@ -172,6 +220,7 @@
     <footer class="footer">
       <p>Moritz Schwerer</p>
       <div>
+        <a href="assets/moritz-schwerer-resume.pdf" target="_blank" rel="noreferrer">Resume</a>
         <a href="mailto:m.u.schwerer@gmail.com">Email</a>
         <a href="https://github.com/MoritzSchwerer" target="_blank" rel="noreferrer">GitHub</a>
         <a href="https://www.linkedin.com/in/moritz-schwerer-b5260726b" target="_blank" rel="noreferrer">LinkedIn</a>

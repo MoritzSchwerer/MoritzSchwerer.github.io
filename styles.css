@@ -114,6 +114,12 @@ h2 {
   letter-spacing: 0;
 }
 
+h3 {
+  margin: 0;
+  font-size: clamp(1.3rem, 2.2vw, 2rem);
+  line-height: 1.15;
+}
+
 .project-list {
   display: grid;
 }
@@ -225,6 +231,38 @@ h2 {
   gap: 8px;
 }
 
+.portrait-feature {
+  display: grid;
+  grid-template-columns: minmax(0, 2fr) minmax(240px, 1fr);
+  gap: clamp(28px, 5vw, 64px);
+  align-items: start;
+}
+
+.portrait-video-pair {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 18px;
+}
+
+.video-frame--portrait {
+  aspect-ratio: 9 / 16;
+}
+
+.portrait-feature-copy {
+  max-width: 540px;
+  padding-top: 8px;
+}
+
+.portrait-feature-copy .project-kicker {
+  margin-bottom: 12px;
+}
+
+.portrait-feature-copy > p:last-child {
+  margin: 16px 0 0;
+  color: var(--muted);
+  font-size: 1.04rem;
+}
+
 .video-feature > p,
 .video-item figcaption {
   margin: 0;
@@ -313,6 +351,11 @@ dd {
     grid-template-columns: 1fr;
   }
 
+  .portrait-feature {
+    grid-template-columns: 1fr;
+    gap: 28px;
+  }
+
   .footer {
     display: grid;
   }
@@ -333,6 +376,14 @@ dd {
 
   .section {
     padding-bottom: 48px;
+  }
+
+  .portrait-feature {
+    grid-template-columns: 1fr;
+  }
+
+  .video-frame--portrait {
+    width: 100%;
   }
 
   dl div {
