@@ -16,10 +16,11 @@
         <div class="intro-copy">
           <h1 id="intro-title">Moritz Schwerer</h1>
           <p class="intro-text">
-            Humanoid RL engineer building simulation-trained policies that
-            transfer to real hardware. My work spans whole-body teleoperation,
-            robust locomotion across different robots, and autonomous football
-            behavior with onboard perception.
+            Humanoid RL engineer developing reinforcement- and imitation-learning
+            policies from simulation to real hardware. My work spans whole-body
+            motion tracking for teleoperation, cross-platform locomotion on
+            Unitree G1 and Booster T1, and autonomous football with onboard
+            perception.
           </p>
         </div>
         <div class="intro-meta" aria-label="Profile links">
@@ -38,11 +39,6 @@
                 <p class="project-kicker">Project 01</p>
                 <h2>Whole-body motion tracking for humanoid teleoperation</h2>
               </div>
-              <p>
-                One reinforcement learning policy trained for teleoperation
-                tracks different prerecorded whole-body references on real
-                hardware.
-              </p>
             </header>
             <div class="portrait-feature">
               <div class="portrait-video-pair">
@@ -66,12 +62,12 @@
                 </figure>
               </div>
               <div class="portrait-feature-copy">
-                <p class="project-kicker">Multiple references</p>
+                <p class="project-kicker">Policy architecture</p>
                 <h3>One policy, different whole-body motions</h3>
                 <p>
-                  The same trained policy executes both trajectories,
-                  translating distinct references into stable whole-body
-                  movement on hardware.
+                  A large MLP trained from scratch uses dedicated encoders for
+                  different input modalities and tracks multiple prerecorded
+                  whole-body references on real hardware.
                 </p>
               </div>
             </div>
